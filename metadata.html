@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Host</title>
+    <link rel="stylesheet"
+      href="C:\Scotia hack\style.css" media="screen">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+
+    <!-- scotiabank icon-->
+    <link rel="shortcut icon" type="image/png"
+    href="C:\Scotia hack\favicon.jpg"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#idCode").hide();
+      });
+    </script>
+  </head>
+
+  <body>
+      <div class="outer">
+
+          <!--input boxes-->
+          <div class="row">
+            <img src="C:\Scotia hack\logo.png" style="padding: 10px;">
+            <h5 id="id" style="color:white; padding-left:1200px; padding-top:85px;"></h5>
+          </div>
+        	<div class="container" style="padding-left: 50px; padding-right: 50px;
+          padding-bottom: 30px;">
+        		<div class="row">
+        		<!-- input boxes-->
+
+        		  <div class="col mb-2">
+                <form id="contactForm" method="get" action="C:\Scotia hack\form.html" role="form"
+                enctype="multipart/form-data">
+                <input type="text" class="id" name="id" id="idCode" style="height: 0px; width: 0px; "/>
+                  <div class="form-group">
+            				<label for="fullName" style="color: white;">Full Name</label>
+            				<input type="text" class="form-control" name="name"
+            				id="fullName" placeholder="John Smith" required="required"
+                    data-error="Firstname is required">
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Age" style="color: white;">Age</label>
+          					<input type="number" class="form-control" name="Age"
+          					id="Age" placeholder="Age" required="required"
+                    min="0" max="110" data-error="Phone number is required">
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email" style="color: white;">Email address</label>
+              			<input type="email" class="form-control" name="email"
+              			id="email" placeholder="name@example.com" required="required"
+                    data-error="Email address is required">
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <p style="color:white;">Choose your gender</p>
+                  <div class="input-group">
+                    <select class="custom-select" id="inputGroupSelect04"
+                     aria-label="Example select with button addon">
+                      <option selected>Choose your gender...</option>
+                      <option value="1">Female</option>
+                      <option value="2">Male</option>
+                      <option value="3">I prefer not to say</option>
+                      <option value="4">Other</option>
+                    </select>
+                  </div>
+
+                  <p style="color:white; padding-top:10px;">Choose the event you are at</p>
+                  <div class="input-group">
+                    <select class="custom-select" id="inputGroupSelect04"
+                     aria-label="Example select with button addon">
+                      <option selected>Choose an event...</option>
+                      <option value="1">S:\Hacks</option>
+                      <option value="2">event 1</option>
+                      <option value="3">event 2</option>
+                      <option value="4">event 3</option>
+                    </select>
+                  </div>
+
+                  <p style="color:white; padding-top:10px;">Are you a Scotiabank member</p>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios"
+                    id="exampleRadios1" value="option1" checked required="required">
+                    <label class="form-check-label" for="yes" style="color:white;">
+                      Yes
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios"
+                    id="exampleRadios2" value="option2" required="required">
+                    <label class="form-check-label" for="no" style="color:white;">
+                      No
+                    </label>
+                  </div>
+
+                  <div class="form-check form-check-inline"
+                  style="padding-top:10px;color:white;">
+                    <input class="form-check-input" type="checkbox"
+                    id="inlineCheckbox1" value="option1" required="required">
+                    <label class="form-check-label" for="inlineCheckbox1">
+                      I Agree to the Terms and Conditions</label>
+                  </div>
+
+          				<div class="container-fluid" style="padding-top:30px;">
+                    <button class="btn btn-scotia" type="submit" formtarget="_self">
+                      <strong>Submit form</strong></button>
+          				</div>
+                </form>
+                <p style="padding-top:20px;color: white;">
+                  <strong>*</strong>These fields are required.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+  </body>
+
+  <script type="text/javascript">
+  var value = parseInt(Math.random() * 100000);
+    document.getElementById('id').innerHTML = "ID: " + value;
+    document.getElementById('idCode').value = value;
+  </script>
+</html>
